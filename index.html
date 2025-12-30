@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assistant Chat UI</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="app-bg flex justify-center items-center min-h-screen">
+
+  <!-- Chat Container -->
+  <div class="chat-container flex flex-col">
+
+    <!-- Header -->
+    <div class="chat-header flex items-center gap-3">
+      <div class="ai-avatar">AI</div>
+      <div>
+        <h2 class="title">AI Assistant</h2>
+        <p class="status">Online</p>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages">
+
+      <!-- AI Message -->
+      <div class="message ai">
+        <div class="bubble">
+         Hello 👋 I’m your AI Assistant. How can I help you today?
+          <span class="time">9:30 PM</span>
+        </div>
+      </div>
+
+      <!-- User Message -->
+      <div class="message user">
+        <div class="bubble">
+         What can you do?
+          <span class="time">9:31 PM</span>
+        </div>
+      </div>
+
+      <!-- AI Message -->
+      <div class="message ai">
+        <div class="bubble">
+          I can help you with coding, UI design, problem solving, explanations, and project guidance.
+          <span class="time">9:31 PM</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message...">
+      <button>Send</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
